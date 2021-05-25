@@ -153,4 +153,32 @@ document.addEventListener('', function() {
 });
 ```
 
+Now we want to use something called an if statement. These are conditions that will run different bits of code depending on what the condition is. For example
+
+```ts
+const value = "example";
+
+if (value === "example") {
+    // first block
+    console.log('value is example');
+} else {
+    // second block
+    console.log('value is not example');
+}
+```
+
+In this example, only the first `console.log` will run. This is because `value` which is `"example"` is equal to `"example"`. If we was to change `value` to something that is not `"example"` then only the section block will run.
+
+So back to our form! What we want to do is check our input values, if they are not what we want then we want to tell the user that the input is not valid by showing an error message. Like so
+
+
+```ts
+const name = nameInput.value;
+
+if (name.length <= 2) {
+    alert("Your name is too short");
+}
+```
+
+> alert is a JavaScript function that pops up with a window on the screen (this are outdated now but we can still use them :))
 
